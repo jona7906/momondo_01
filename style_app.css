@@ -1,0 +1,190 @@
+body {
+  height: 100vh;
+}
+
+main {
+  height: 100%;
+}
+
+#city-search input,
+#date-container input {
+  background-image: url("icon_plane.png");
+  background-size: 10%;
+  background-position: 10%;
+  background-repeat: no-repeat;
+
+  text-indent: 23%;
+  height: 4rem;
+  width: 100%;
+  padding: 0 0.5rem;
+  outline: 0;
+  border-radius: 1.1vw;
+  border: none;
+  color: black;
+  background-color: rgb(243, 240, 245);
+}
+div#flights_wrapper {
+  overflow: visible;
+  z-index: 100;
+  position: relative;
+}
+
+div#flight-search {
+  /*  z-index: 1; */
+  width: 100vw;
+  /* height: 20rem; */
+  padding: 3vw 1vw 1vw 0;
+  background: rgb(33, 3, 58);
+  display: flex;
+  flex-direction: column;
+}
+
+button#search-button {
+  all: unset;
+  width: 20%;
+}
+
+button#search-button img {
+  width: 20%;
+}
+
+div#flight-search form {
+  z-index: 1;
+  align-items: center;
+  border-radius: 1.1vw;
+  width: 100%;
+  height: auto;
+  padding: 0.4rem;
+  background-color: rgb(0, 149, 204);
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+div#flight-search form div#city-search {
+  display: flex;
+  width: 50%;
+  gap: 0.5rem;
+}
+
+div#flight-search form div#date-container {
+  width: 50%;
+  display: flex;
+  border-radius: 1.1vw;
+  overflow: hidden;
+  background-color: rgb(243, 240, 245);
+}
+
+div#flight-search form div#date-container .date-input {
+  border-radius: 0;
+  background-image: url("icon_calendar.png");
+  background-size: 10%;
+  background-position: 10%;
+  background-repeat: no-repeat;
+}
+
+div#date-container .change-date {
+  display: flex;
+  background-color: rgb(243, 240, 245);
+  gap: 1vw;
+  margin-right: 1.5vw;
+}
+
+div#date-container div#date-from,
+div#date-container div#date-to {
+  display: flex;
+}
+
+div#date-container .change-date button img {
+  height: 0.65rem;
+  width: 0.5rem;
+}
+
+div#date-container .change-date .arrow-right {
+  transform: scaleX(-1);
+  background-color: rgb(243, 240, 245);
+}
+
+div#flight-search form div#shift-button {
+  height: 4rem;
+  z-index: 20;
+}
+
+div#flight-search form button {
+  height: 4rem;
+  outline: 0;
+  border: none;
+}
+
+div#flight-search form button img {
+  height: 4rem;
+  width: 8rem;
+  flex-direction: row;
+}
+
+div#flight-search div#from-container {
+  width: 100%;
+  height: fit-content;
+  overflow: visible;
+  z-index: 1000;
+}
+
+div#flight-search div#from-container div#from-results {
+  display: none;
+  overflow: scroll;
+  margin-top: 0.4rem;
+  min-width: fit-content;
+  width: 60vw;
+  height: fit-content;
+
+  max-height: 20rem;
+  background: rgb(243, 240, 245);
+  position: absolute;
+  border-radius: 0 1.1vw 1.1vw 1.1vw;
+  z-index: 1000;
+}
+
+div.from-city {
+  color: black;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+div.from-city img {
+  width: 10vw;
+}
+
+div.from-city p,
+div.to-city p {
+  color: black;
+}
+
+div#flight-search div#to-container {
+  width: 100%;
+}
+
+div#flight-search div#to-container div#to-results {
+  display: none;
+  margin-top: 0.4rem;
+  width: 35vw;
+  height: 20rem;
+  background: white;
+  position: absolute;
+  border-radius: 0 1.1vw 1.1vw 1.1vw;
+  z-index: 10;
+  overflow: scroll;
+}
+
+div.to-city {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+div.to-city img {
+  width: 10vw;
+}

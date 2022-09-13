@@ -1,0 +1,29 @@
+You do not need to hand-in anywhere, though you could be asked to show it at the exam
+
+Create a website that uses the following:
+
+htaccess/the files are organized in groups
+
+require_once
+
+navigation bar is common for all pages
+
+footer common for all pages
+
+must validate front-end
+
+must validate back-end
+
+at least 5 different pages
+
+at least one api
+
+at least one bridge
+
+the navbar changes the active tab/link depending on which page the user is visiting
+
+the title of each page changes depending on which page the user is visiting
+
+"Make it look good"
+
+Please, without copying and pasting, you can look at the code :)
